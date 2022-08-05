@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "catan:block/catanbaseblock"
+    },
+    "facing=east": {
+      "model": "catan:block/catanbaseblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "catan:block/catanbaseblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "catan:block/catanbaseblock",
+      "y": 270
+    }
+  }
+}

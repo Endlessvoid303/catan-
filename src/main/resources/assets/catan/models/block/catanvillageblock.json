@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "catan:blocks/oak_planks",
+    "up": "catan:blocks/catan_village",
+    "north": "catan:blocks/crafting_table_side",
+    "east": "catan:blocks/crafting_table_front",
+    "south": "catan:blocks/crafting_table_side",
+    "west": "catan:blocks/crafting_table_front",
+    "particle": "catan:blocks/oak_planks"
+  }
+}

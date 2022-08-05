@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "catan:blocks/oak_planks",
+    "up": "catan:blocks/shop_top",
+    "north": "catan:blocks/shop_side",
+    "east": "catan:blocks/sshop_front",
+    "south": "catan:blocks/shop_side",
+    "west": "catan:blocks/sshop_front",
+    "particle": "catan:blocks/oak_planks"
+  }
+}

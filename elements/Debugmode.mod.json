@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "debugmode",
+    "description": "catan debug mode",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

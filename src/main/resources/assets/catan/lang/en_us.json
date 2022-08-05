@@ -1,0 +1,16 @@
+{
+  "item.catan.tierstone": "Tierstone",
+  "block.catan.catanbaseblock": "Catanbaseblock",
+  "block.catan.catanvillageblock": "Catanvillageblock",
+  "gamerule.debugmode.description": "catan debug mode",
+  "block.catan.catanbiomeblock": "Catanbiomeblock",
+  "item.catan.tierhay": "Tierhay",
+  "block.catan.catanroadblock": "Catanroadblock",
+  "gamerule.debugmode": "debugmode",
+  "block.catan.catanshop": "Catanshop",
+  "item.catan.tiergold": "Tiergold",
+  "item.catan.tierbrick": "Tierbrick",
+  "item.catan.tierwood": "Tierwood",
+  "itemGroup.tabtabcatan": "catan",
+  "item.catan.tierwool": "wool generator"
+}

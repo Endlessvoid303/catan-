@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "catan",
+    "icon": {
+      "value": "CUSTOM:Catanbaseblock"
+    },
+    "showSearch": true
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 300,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 15,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "build village",
+          "onClick": {
+            "name": "Showvillagebutton"
+          },
+          "width": 93,
+          "height": 20,
+          "name": "build village",
+          "x": 166,
+          "y": 31
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "build city",
+          "onClick": {
+            "name": "Showcitybutton"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "build city",
+          "x": 174,
+          "y": 56
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "build shop",
+          "onClick": {
+            "name": "Buildshop"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "build shop",
+          "x": 173,
+          "y": 109
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

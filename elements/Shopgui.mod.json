@@ -1,0 +1,255 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 300,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 38,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "trade gold",
+          "onClick": {
+            "name": "Sellgold"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "trade gold",
+          "x": 73,
+          "y": 30
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "buy gold",
+          "onClick": {
+            "name": "Buygold"
+          },
+          "width": 66,
+          "height": 20,
+          "name": "buy gold",
+          "x": 286,
+          "y": 28
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "trade wood",
+          "onClick": {
+            "name": "Sellwood"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "trade wood",
+          "x": 73,
+          "y": 51
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "buy wood",
+          "onClick": {
+            "name": "Buywood"
+          },
+          "width": 66,
+          "height": 20,
+          "name": "buy wood",
+          "x": 286,
+          "y": 49
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "trade stone",
+          "onClick": {
+            "name": "Sellstone"
+          },
+          "width": 82,
+          "height": 20,
+          "name": "trade stone",
+          "x": 73,
+          "y": 73
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "buy stone",
+          "onClick": {
+            "name": "Buystone"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "buy stone",
+          "x": 280,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "trade wool",
+          "onClick": {
+            "name": "Sellwool"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "trade wool",
+          "x": 73,
+          "y": 95
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "buy wool",
+          "onClick": {
+            "name": "Buywool"
+          },
+          "width": 66,
+          "height": 20,
+          "name": "buy wool",
+          "x": 286,
+          "y": 94
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "trade bricks",
+          "onClick": {
+            "name": "Sellbricks"
+          },
+          "width": 87,
+          "height": 20,
+          "name": "trade bricks",
+          "x": 73,
+          "y": 6
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "buy bricks",
+          "onClick": {
+            "name": "Buybricks"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "buy bricks",
+          "x": 275,
+          "y": 5
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "trade wheat",
+          "onClick": {
+            "name": "Sellwheat"
+          },
+          "width": 82,
+          "height": 20,
+          "name": "trade wheat",
+          "x": 73,
+          "y": 118
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "buy wheat",
+          "onClick": {
+            "name": "Buywheat"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "buy wheat",
+          "x": 280,
+          "y": 116
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 170,
+          "y": 75
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 244,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "sell",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "sell",
+          "x": 168,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "buy",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "buy",
+          "x": 244,
+          "y": 55
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "trade",
+          "onClick": {
+            "name": "Trade"
+          },
+          "width": 51,
+          "height": 20,
+          "name": "trade",
+          "x": 189,
+          "y": 74
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
