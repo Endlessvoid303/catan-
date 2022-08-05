@@ -5,11 +5,13 @@ import net.minecraftforge.items.CapabilityItemHandler;
 
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
@@ -88,6 +90,15 @@ public class Generate_biomeProcedure {
 						((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 				});
 			}
+		}
+		if (!world.isClientSide()) {
+			BlockPos _bp = new BlockPos(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getTileData().putDouble("blocktier", 1);
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
 		CatanbiomeguiopenProcedure.execute(world, x, y, z);
 	}

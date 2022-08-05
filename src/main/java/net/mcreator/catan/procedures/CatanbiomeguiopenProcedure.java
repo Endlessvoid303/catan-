@@ -9,6 +9,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.catan.network.CatanModVariables;
 import net.mcreator.catan.init.CatanModItems;
 
 import java.util.concurrent.atomic.AtomicReference;
@@ -105,5 +106,14 @@ public class CatanbiomeguiopenProcedure {
 				}
 			}
 		}
+		CatanModVariables.MapVariables.get(world).tier = new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getTileData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "blocktier");
+		CatanModVariables.MapVariables.get(world).syncData(world);
 	}
 }

@@ -147,7 +147,7 @@ public class CatanModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "catan_mapvars";
-		public double tier = 0;
+		public double tier = 1.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();

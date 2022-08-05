@@ -971,7 +971,7 @@
       "name": "tier",
       "type": "number",
       "scope": "map",
-      "value": "0"
+      "value": "1.0"
     }
   ],
   "sound_elements": [],
