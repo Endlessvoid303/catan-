@@ -952,6 +952,59 @@
         ]
       },
       "path": "~/procedures"
+    },
+    {
+      "name": "Biomebasecost",
+      "type": "gamerule",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomebasecost",
+      "metadata": {
+        "type": "number"
+      },
+      "path": "~/gamerules"
+    },
+    {
+      "name": "Biomecostmultiplier",
+      "type": "gamerule",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomecostmultiplier",
+      "metadata": {
+        "type": "number"
+      },
+      "path": "~/gamerules"
+    },
+    {
+      "name": "Biomecostpower",
+      "type": "gamerule",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomecostpower",
+      "metadata": {
+        "type": "number"
+      },
+      "path": "~/gamerules"
+    },
+    {
+      "name": "Pricebiomeupgrade",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pricebiomeupgrade",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
     }
   ],
   "variable_elements": [
@@ -972,6 +1025,12 @@
       "type": "number",
       "scope": "map",
       "value": "1.0"
+    },
+    {
+      "name": "biome_upgrade_cost",
+      "type": "number",
+      "scope": "map",
+      "value": "10.0"
     }
   ],
   "sound_elements": [],
@@ -979,16 +1038,22 @@
     "en_us": {
       "item.catan.tierstone": "Tierstone",
       "block.catan.catanbaseblock": "Catanbaseblock",
+      "gamerule.biomecostmultiplier": "biomecostmultiplier",
       "block.catan.catanvillageblock": "Catanvillageblock",
       "gamerule.debugmode.description": "catan debug mode",
+      "gamerule.biomecostpower.description": "base cost to the power times the multiplier for biome",
       "block.catan.catanbiomeblock": "Catanbiomeblock",
       "item.catan.tierhay": "Tierhay",
       "block.catan.catanroadblock": "Catanroadblock",
       "gamerule.debugmode": "debugmode",
       "block.catan.catanshop": "Catanshop",
+      "gamerule.biomebasecost": "biomebasecost",
       "item.catan.tiergold": "Tiergold",
+      "gamerule.biomecostmultiplier.description": "cost multiplier for biome",
       "item.catan.tierbrick": "Tierbrick",
       "item.catan.tierwood": "Tierwood",
+      "gamerule.biomebasecost.description": "basic cost of the biome",
+      "gamerule.biomecostpower": "biomecostpower",
       "itemGroup.tabtabcatan": "catan",
       "item.catan.tierwool": "wool generator"
     }

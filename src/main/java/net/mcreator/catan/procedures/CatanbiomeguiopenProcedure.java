@@ -115,5 +115,6 @@ public class CatanbiomeguiopenProcedure {
 			}
 		}.getValue(world, new BlockPos(x, y, z), "blocktier");
 		CatanModVariables.MapVariables.get(world).syncData(world);
+		PricebiomeupgradeProcedure.execute(world);
 	}
 }

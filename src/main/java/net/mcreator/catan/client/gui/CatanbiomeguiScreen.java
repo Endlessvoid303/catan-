@@ -74,6 +74,7 @@ public class CatanbiomeguiScreen extends AbstractContainerScreen<CatanbiomeguiMe
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "tier " + (CatanModVariables.MapVariables.get(world).tier) + "", 8, 79, -12829636);
+		this.font.draw(poseStack, "price: " + (CatanModVariables.MapVariables.get(world).biome_upgrade_cost) + "", 7, 13, -12829636);
 	}
 
 	@Override

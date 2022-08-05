@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "biomecostpower",
+    "description": "base cost to the power times the multiplier for biome",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 1
+  }
+}

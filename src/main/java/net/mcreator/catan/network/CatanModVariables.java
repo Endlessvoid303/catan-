@@ -148,6 +148,7 @@ public class CatanModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "catan_mapvars";
 		public double tier = 1.0;
+		public double biome_upgrade_cost = 10.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -157,11 +158,13 @@ public class CatanModVariables {
 
 		public void read(CompoundTag nbt) {
 			tier = nbt.getDouble("tier");
+			biome_upgrade_cost = nbt.getDouble("biome_upgrade_cost");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("tier", tier);
+			nbt.putDouble("biome_upgrade_cost", biome_upgrade_cost);
 			return nbt;
 		}
 

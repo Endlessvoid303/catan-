@@ -72,6 +72,19 @@
           "x": 72,
           "y": 99
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "price: <VAR:biome_upgrade_cost>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "price: <VAR:biome_upgrade_cost>",
+          "x": 71,
+          "y": 33
+        }
       }
     ],
     "onOpen": {

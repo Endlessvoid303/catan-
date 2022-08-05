@@ -1,16 +1,22 @@
 {
   "item.catan.tierstone": "Tierstone",
   "block.catan.catanbaseblock": "Catanbaseblock",
+  "gamerule.biomecostmultiplier": "biomecostmultiplier",
   "block.catan.catanvillageblock": "Catanvillageblock",
   "gamerule.debugmode.description": "catan debug mode",
+  "gamerule.biomecostpower.description": "base cost to the power times the multiplier for biome",
   "block.catan.catanbiomeblock": "Catanbiomeblock",
   "item.catan.tierhay": "Tierhay",
   "block.catan.catanroadblock": "Catanroadblock",
   "gamerule.debugmode": "debugmode",
   "block.catan.catanshop": "Catanshop",
+  "gamerule.biomebasecost": "biomebasecost",
   "item.catan.tiergold": "Tiergold",
+  "gamerule.biomecostmultiplier.description": "cost multiplier for biome",
   "item.catan.tierbrick": "Tierbrick",
   "item.catan.tierwood": "Tierwood",
+  "gamerule.biomebasecost.description": "basic cost of the biome",
+  "gamerule.biomecostpower": "biomecostpower",
   "itemGroup.tabtabcatan": "catan",
   "item.catan.tierwool": "wool generator"
 }

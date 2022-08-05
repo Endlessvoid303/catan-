@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "biomebasecost",
+    "description": "basic cost of the biome",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 10
+  }
+}

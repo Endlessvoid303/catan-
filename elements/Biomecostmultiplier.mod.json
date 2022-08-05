@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "biomecostmultiplier",
+    "description": "cost multiplier for biome",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 1
+  }
+}
