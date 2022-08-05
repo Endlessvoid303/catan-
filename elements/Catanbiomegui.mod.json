@@ -39,6 +39,9 @@
         "type": "button",
         "data": {
           "text": "upgrade",
+          "onClick": {
+            "name": "Biomeupgrade"
+          },
           "width": 61,
           "height": 20,
           "name": "upgrade",

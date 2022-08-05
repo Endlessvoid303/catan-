@@ -88,6 +88,10 @@ public class CatanbiomeguiScreen extends AbstractContainerScreen<CatanbiomeguiMe
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 32, 61, 20, new TextComponent("upgrade"), e -> {
+			if (true) {
+				CatanMod.PACKET_HANDLER.sendToServer(new CatanbiomeguiButtonMessage(0, x, y, z));
+				CatanbiomeguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 224, this.topPos + 10, 61, 20, new TextComponent("destroy"), e -> {
 			if (true) {

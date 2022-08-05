@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.catan.world.inventory.CatanbiomeguiMenu;
 import net.mcreator.catan.procedures.DestroybiomeProcedure;
+import net.mcreator.catan.procedures.BiomeupgradeProcedure;
 import net.mcreator.catan.CatanMod;
 
 import java.util.function.Supplier;
@@ -62,6 +63,10 @@ public class CatanbiomeguiButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+
+			BiomeupgradeProcedure.execute(world, x, y, z);
+		}
 		if (buttonID == 1) {
 
 			DestroybiomeProcedure.execute(world, x, y, z, entity);
