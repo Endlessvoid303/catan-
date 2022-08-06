@@ -42,6 +42,9 @@
           "onClick": {
             "name": "Biomeupgrade"
           },
+          "displayCondition": {
+            "name": "BiomeShowupgrade"
+          },
           "width": 61,
           "height": 20,
           "name": "upgrade",
@@ -79,12 +82,12 @@
       {
         "type": "label",
         "data": {
-          "text": "price: <VAR:biome_upgrade_cost>",
+          "text": "price: <VAR:biome_upgrade_price>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "price: <VAR:biome_upgrade_cost>",
+          "name": "price: <VAR:biome_upgrade_price>",
           "x": 71,
           "y": 33
         }
@@ -92,6 +95,9 @@
     ],
     "onOpen": {
       "name": "Catanbiomeguiopen"
+    },
+    "onTick": {
+      "name": "Pricebiomeupgrade"
     },
     "gridSettings": {
       "sx": 18,

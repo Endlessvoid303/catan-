@@ -16,6 +16,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class CatanbiomeguiopenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		PricebiomeupgradeProcedure.execute(world);
 		if ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -115,6 +116,5 @@ public class CatanbiomeguiopenProcedure {
 			}
 		}.getValue(world, new BlockPos(x, y, z), "blocktier");
 		CatanModVariables.MapVariables.get(world).syncData(world);
-		PricebiomeupgradeProcedure.execute(world);
 	}
 }

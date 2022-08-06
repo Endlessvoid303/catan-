@@ -1034,6 +1034,36 @@
         ]
       },
       "path": "~/procedures"
+    },
+    {
+      "name": "BiomeShowupgrade",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biome_showupgrade",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
     }
   ],
   "variable_elements": [
@@ -1060,6 +1090,12 @@
       "type": "number",
       "scope": "map",
       "value": "10.0"
+    },
+    {
+      "name": "biome_upgrade_price",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],

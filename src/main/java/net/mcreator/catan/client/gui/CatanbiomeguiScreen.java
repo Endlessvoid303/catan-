@@ -12,6 +12,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.catan.world.inventory.CatanbiomeguiMenu;
+import net.mcreator.catan.procedures.BiomeShowupgradeProcedure;
 import net.mcreator.catan.network.CatanbiomeguiButtonMessage;
 import net.mcreator.catan.network.CatanModVariables;
 import net.mcreator.catan.CatanMod;
@@ -74,7 +75,7 @@ public class CatanbiomeguiScreen extends AbstractContainerScreen<CatanbiomeguiMe
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "tier " + (CatanModVariables.MapVariables.get(world).tier) + "", 8, 79, -12829636);
-		this.font.draw(poseStack, "price: " + (CatanModVariables.MapVariables.get(world).biome_upgrade_cost) + "", 7, 13, -12829636);
+		this.font.draw(poseStack, "price: " + (CatanModVariables.MapVariables.get(world).biome_upgrade_price) + "", 7, 13, -12829636);
 	}
 
 	@Override
@@ -88,11 +89,17 @@ public class CatanbiomeguiScreen extends AbstractContainerScreen<CatanbiomeguiMe
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 32, 61, 20, new TextComponent("upgrade"), e -> {
-			if (true) {
+			if (BiomeShowupgradeProcedure.execute(world, x, y, z)) {
 				CatanMod.PACKET_HANDLER.sendToServer(new CatanbiomeguiButtonMessage(0, x, y, z));
 				CatanbiomeguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		}) {
+			@Override
+			public void render(PoseStack ms, int gx, int gy, float ticks) {
+				if (BiomeShowupgradeProcedure.execute(world, x, y, z))
+					super.render(ms, gx, gy, ticks);
+			}
+		});
 		this.addRenderableWidget(new Button(this.leftPos + 224, this.topPos + 10, 61, 20, new TextComponent("destroy"), e -> {
 			if (true) {
 				CatanMod.PACKET_HANDLER.sendToServer(new CatanbiomeguiButtonMessage(1, x, y, z));
