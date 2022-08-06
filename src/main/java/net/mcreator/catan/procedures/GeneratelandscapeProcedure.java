@@ -65,29 +65,25 @@ public class GeneratelandscapeProcedure {
 						"", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "fill ~-3 ~ ~1 ~3 ~ ~-1 gravel");
 			Place_roadsProcedure.execute(world, (x - 5), y, z);
 		}
-		if ((world.getBlockState(new BlockPos(x, y, z - 5))).getBlock() == CatanModBlocks.CATANBIOMEBLOCK.get()) {
-			generate_north = false;
-		}
-		if ((world.getBlockState(new BlockPos(x + 5, y, z))).getBlock() == CatanModBlocks.CATANBIOMEBLOCK.get()) {
-			generate_east = false;
-		}
-		if ((world.getBlockState(new BlockPos(x, y, z + 5))).getBlock() == CatanModBlocks.CATANBIOMEBLOCK.get()) {
-			generate_south = false;
-		}
-		if ((world.getBlockState(new BlockPos(x - 5, y, z))).getBlock() == CatanModBlocks.CATANBIOMEBLOCK.get()) {
-			generate_west = false;
-		}
 		if (generate_north == true) {
 			Generate_biomeProcedure.execute(world, x, y, (z - 5));
+			Generate_biomeProcedure.execute(world, (x + 10), y, (z - 5));
+			Generate_biomeProcedure.execute(world, (x - 10), y, (z - 5));
 		}
 		if (generate_east == true) {
+			Generate_biomeProcedure.execute(world, (x + 5), y, (z + 10));
+			Generate_biomeProcedure.execute(world, (x + 5), y, (z - 10));
 			Generate_biomeProcedure.execute(world, (x + 5), y, z);
 		}
 		if (generate_south == true) {
 			Generate_biomeProcedure.execute(world, x, y, (z + 5));
+			Generate_biomeProcedure.execute(world, (x + 10), y, (z + 5));
+			Generate_biomeProcedure.execute(world, (x - 10), y, (z + 5));
 		}
 		if (generate_west == true) {
 			Generate_biomeProcedure.execute(world, (x - 5), y, z);
+			Generate_biomeProcedure.execute(world, (x - 5), y, (z + 10));
+			Generate_biomeProcedure.execute(world, (x - 5), y, (z - 10));
 		}
 		if (entity instanceof Player _player)
 			_player.closeContainer();
